@@ -69,23 +69,24 @@ nodemon app.js
 - `routes/` - Folder containing the route definitions for my API.
 - `models/` - Folder containing  the schema definitions for my Mongoose models.
 
-## Error Handling
-
-In `routes/api/index.js`, defines a error-handling middleware for handling Mongoose's `ValidationError`. This middleware will respond with a 422 status code and format the response to have [error messages the clients can understand](https://github.com/gothinkster/realworld/blob/master/API.md#errors-and-status-codes)
-
-## Authentication
-
-Requests are authenticated using the `Authorization` header with a valid JWT. `routes/auth.js` defines two express middlewares that can be used to authenticate requests. The `required` middleware configures the `express-jwt` middleware using my application's secret and will return a 401 status code if the request cannot be authenticated. The payload of the JWT can then be accessed from `req.payload` in the endpoint. The `optional` middleware configures the `express-jwt` in the same way as `required`, but will *not* return a 401 status code if the request cannot be authenticated.
-
 
 ----------
 
 ### Credits
 
-Sites that have assisted me in my studies of this project
+**Sites** that have assisted me in my studies of this project
 
 - https://jwt.io/introduction/
 - https://scotch.io/tutorials/authenticate-a-node-js-api-with-json-web-tokens
 - http://blog.getpostman.com/2014/03/07/writing-automated-tests-for-apis-using-postman/
 - https://scotch.io/tutorials/using-mongoosejs-in-node-js-and-mongodb-applications
-- 
+- https://github.com/Cody2333/generator-node-rest-api
+- https://github.com/diegohaz/rest
+- https://github.com/ndelvalle/generator-api
+
+**Books**
+
+- Web Development with MongoDB and NodeJS
+- Express in Action, 2016 by Manning Publications
+- Express.js Blueprints, 2015
+

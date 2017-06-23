@@ -43,6 +43,9 @@ if (isProduction) {
     mongoose.set('debug', true);
 }
 
+// models go before routes so the routes can use the models
+require('./models/User');
+
 /* Get our API routes */
 app.use(require('./routes'));
 
