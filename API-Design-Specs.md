@@ -1,4 +1,4 @@
-Connector is a Medium.com clone. 
+Connector is a reengineered clone of the social blogging site Medium.com. 
 
 Connector is a fully featured social blogging site including:
 
@@ -45,6 +45,7 @@ Other status codes:
 403 for Forbidden requests, when a request may be valid but the user doesn't have permissions to perform the action
 
 404 for Not found requests, when a resource can't be found to fulfill the request
+
 
 ## Authentication ##
 
@@ -141,6 +142,7 @@ First I'll need to create a new object for **Profiles**:
       }
     }
 
+
 **Getting a user's public profile**
 
     GET /api/profiles/:username
@@ -149,11 +151,13 @@ Authentication optional, returns a Profile
 
 The other actions we can do with a profile is to follow and unfollow it.
 
+
 **Follow a user**
 
     POST /api/profiles/:username/follow
 
 Authentication required, returns a Profile No additional parameters required
+
 
 **Unfollow a user**
 
@@ -184,6 +188,7 @@ Next I need to create a spec for the article data.
     }
   }
 }
+
 
 **Create Article**
 
@@ -331,6 +336,7 @@ This is different from any of the other endpoints, because its going to receive 
 
 Tags are created when articles are created, and deleted when no articles are using them any more. On my home page I want to show a list of all the tags, so I'll need an endpoint for that.
 
+
 **Getting tags**
 
     GET /api/tags
@@ -384,11 +390,13 @@ I know I want to list out articles that can be paginated and sorted based on aut
       "articlesCount": 2
     }
 
+
 **List Articles**
 
     GET /api/articles
 
 Returns most recent articles globally be default, provide tag, author or favorited query parameter to filter results
+
 
 ### Query Parameters:
 

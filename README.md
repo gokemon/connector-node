@@ -62,13 +62,14 @@ nodemon app.js
 - [passport](https://github.com/jaredhanson/passport) - For handling user authentication
 - [slug](https://github.com/dodo/node-slug) - For encoding titles into a URL-friendly format
 
+
 ## Application Structure
 
-- `app.js` - Application entry point. This file defines the express server and connects it to MongoDB using mongoose. It also requires the routes and models I'm creating.
+- `server.js` - Application entry point. This file defines the express server and connects it to MongoDB using mongoose. It also requires the routes and models I'm creating.
 - `config/` - Folder containing configuration for passport as well as a central location for configuration/environment variables.
 - `routes/` - Folder containing the route definitions for my API.
 - `models/` - Folder containing  the schema definitions for my Mongoose models.
-
+- `connector-api` - The Application Folder into which I plan to fold the routes and models into. The config folder stays outside of this.
 
 ----------
 
