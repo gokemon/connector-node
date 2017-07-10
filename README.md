@@ -83,6 +83,7 @@ nodemon app.js
 - https://github.com/Cody2333/generator-node-rest-api
 - https://github.com/diegohaz/rest
 - https://github.com/ndelvalle/generator-api
+- https://github.com/EthanRBrown/web-development-with-node-and-express
 
 **Books**
 
