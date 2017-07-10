@@ -19,18 +19,16 @@ var app = express(); // Create global app object
 app.use(cors());
 // no view engine setup needed
 
-
 /* Normal express config defaults  */
 app.use(require('morgan')('dev'));
 /* Parsers for POST data */
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-
 app.use(require('method-override')());
 app.use(express.static(__dirname + '/public'));
 
-app.use(session({ secret: 'connector', cookie: { maxAge: 60000 }, resave: false, saveUninitialized: false }));
+app.use(session({ secret: 'conduit', cookie: { maxAge: 60000 }, resave: false, saveUninitialized: false }));
 
 if (!isProduction) {
     app.use(errorhandler());
@@ -58,7 +56,6 @@ app.use(function(req, res, next) {
 });
 
 
-
 /*/ error handlers  /*/
 /* development error handler  */
 /* will print stacktrace  */
@@ -76,7 +73,6 @@ if (!isProduction) {
         });
     });
 }
-
 
 /* production error handler  */
 /* no stacktraces leaked to user  */
