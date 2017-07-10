@@ -45,6 +45,8 @@ if (isProduction) {
 
 // models go before routes so the routes can use the models
 require('./models/User');
+// after we have a user, then then authenicate them
+require('./config/passport');
 
 /* Get our API routes */
 app.use(require('./routes'));
