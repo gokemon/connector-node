@@ -1,7 +1,5 @@
 # connector-node
-Connector is a Medium.com clone. 
-
-Connector is a fully featured social blogging site including:
+Connector is a reverse-engineered clone of the social blogging site Medium.com which includes; 
 
 - Authentication with JWT(JSON Web Token)
 - Profiles with images
