@@ -1,6 +1,6 @@
 {
     "name": "connector-node",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "author": "Michael Gokey",
     "description": "connector application with a node api back-end",
     "license": "MIT",

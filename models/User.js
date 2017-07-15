@@ -89,5 +89,15 @@ UserSchema.methods.toAuthJSON = function() {
 };
 
 
+UserSchema.methods.toProfileJSONFor = function(user) {
+    return {
+        username: this.username,
+        bio: this.bio,
+        image: this.image || 'https://en.wikipedia.org/wiki/Smiley#/media/File:SNice.svg',
+        following: false
+    };
+};
+
+
 /* registers the schema with mongoose */
 mongoose.model('User', UserSchema);

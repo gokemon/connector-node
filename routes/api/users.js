@@ -2,7 +2,7 @@ var mongoose = require('mongoose'); // modeling and mapping MongoDB data to java
 var router = require('express').Router(); // define a router using the express router
 var passport = require('passport'); // for authentication
 var User = mongoose.model('User'); // our local User model
-var auth = require('../auth');
+var auth = require('../auth'); // sets up the JWTokens
 
 
 /* Lets set up some User api routes to call */
