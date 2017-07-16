@@ -36,7 +36,7 @@ Based on the API above, I think I should set-up my planned branches here.
 - 03-auth-middleware * 
 - 04-auth-routes   
 - 05-profiles   
-- 06-articles-crud   
+- 06-articles  
 - 07-favorites   
 - 08-comments   
 - 09-following   
@@ -59,6 +59,13 @@ nodemon app.js
 - [mongoose-unique-validator](https://github.com/blakehaswell/mongoose-unique-validator) - For handling unique validation errors in Mongoose. Mongoose only handles validation at the document level, so a unique index across a collection will throw an exception at the driver level. The `mongoose-unique-validator` plugin helps us by formatting the error like a normal mongoose `ValidationError`.
 - [passport](https://github.com/jaredhanson/passport) - For handling user authentication
 - [slug](https://github.com/dodo/node-slug) - For encoding titles into a URL-friendly format
+
+
+## Unit Testing
+
+I need to start building some tests for this.
+I know that I have the stuff in my toolbox somewhere to do that. I just need to dig it out and start building some tests.
+
 
 
 ## Application Structure

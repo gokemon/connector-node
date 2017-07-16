@@ -45,6 +45,8 @@ if (isProduction) {
 
 // models go before routes so the routes can use the models
 require('./models/User');
+// lets add Articles after user and before auth
+require('./models/Article');
 // after we have a user, then then authenicate them
 require('./config/passport');
 

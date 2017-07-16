@@ -9,7 +9,7 @@ var crypto = require('crypto');
 var jwt = require('jsonwebtoken');
 var secret = require('../config').secret;
 
-
+// setup a new mongo database schema via mongoose
 var UserSchema = new mongoose.Schema({
         username: {
             type: String,
