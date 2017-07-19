@@ -41,10 +41,11 @@ Based on the API above, I think I should set-up my planned branches here.
 - 08-comments   
 - 09-following   
 - 10-tags
+- 11-tests **
 
  * This is about as far as I think I can go in the first sprint.
 
-
+ ** I realized about branch 6, that I needed to and could build tests on this
 ----------
 nodemon app.js
 

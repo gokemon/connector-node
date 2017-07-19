@@ -99,5 +99,29 @@ UserSchema.methods.toProfileJSONFor = function(user) {
 };
 
 
+/* special methods for favoriting articles */
+// add favorite method
+UserSchema.methods.favorite = function(id) {
+    if (this.favorites.indexOf(id) === -1) {
+        this.favorites.push(id);
+    }
+    return this.save();
+};
+
+// and the unfavorite method
+UserSchema.methods.unfavorite = function(id) {
+    this.favorites.remove(id);
+    return this.save();
+};
+
+// check to see if its a favorite
+UserSchema.methods.isFavorite = function(id) {
+    return this.favorites.some(function(favoriteId) {
+        return favoriteId.toString() === id.toString();
+    });
+};
+
+
+
 /* registers the schema with mongoose */
 mongoose.model('User', UserSchema);
