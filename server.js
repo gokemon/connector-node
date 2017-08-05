@@ -47,6 +47,8 @@ if (isProduction) {
 require('./models/User');
 // lets add Articles after user and before auth
 require('./models/Article');
+// lets add Comment after Articles
+require('./models/Comment');
 // after we have a user, then then authenicate them
 require('./config/passport');
 

@@ -31,14 +31,14 @@ Branches
 
 Based on the API above, I think I should set-up my planned branches here.
 
-- 01-setup  
-- 02-user-model   
-- 03-auth-middleware * 
-- 04-auth-routes   
-- 05-profiles   
-- 06-articles  
-- 07-favorites   
-- 08-comments   
+- 01-setup (done)  
+- 02-user-model (done)    
+- 03-auth-middleware (done) *  
+- 04-auth-routes (done)   
+- 05-profiles   (done) 
+- 06-articles  (done)
+- 07-favorites (done)  
+- 08-comments   (done)
 - 09-following   
 - 10-tags
 - 11-tests **
